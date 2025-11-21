@@ -282,6 +282,42 @@
                         </div>
                     </div>
                 </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#contact" class="btn btn-large pulse-btn">まずは相談してみる</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flow Section -->
+        <section id="flow" class="section flow">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Flow</span>
+                    <h2 class="section-title">開催までの流れ</h2>
+                </div>
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="step-num">01</div>
+                        <h3>お問い合わせ</h3>
+                        <p>フォームまたはお電話で、ご希望の日時や場所をお知らせください。</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">02</div>
+                        <h3>お打ち合わせ</h3>
+                        <p>担当者が伺い、参加人数や会場の設備などを確認させていただきます。</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">03</div>
+                        <h3>プログラム決定</h3>
+                        <p>ご要望に合わせて、最適なテーマや内容をご提案します。</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">04</div>
+                        <h3>当日開催</h3>
+                        <p>講師が会場へ伺い、健康教室を実施します。準備から片付けまでお任せください。</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -339,6 +375,39 @@
             </div>
         </section>
 
+        <!-- Voices Section -->
+        <section id="voices" class="section voices">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Voices</span>
+                    <h2 class="section-title">参加者の声</h2>
+                </div>
+                <div class="voices-grid">
+                    <div class="voice-card">
+                        <div class="voice-icon">👵</div>
+                        <div class="voice-content">
+                            <p class="voice-text">「腸の話がとても分かりやすく、毎日の食事が楽しみになりました。体操も無理なく続けられそうです。」</p>
+                            <p class="voice-author">70代 女性（公民館での開催）</p>
+                        </div>
+                    </div>
+                    <div class="voice-card">
+                        <div class="voice-icon">👨‍💼</div>
+                        <div class="voice-content">
+                            <p class="voice-text">「社員の健康意識向上のために依頼しました。笑いありの楽しい講座で、職場の雰囲気も明るくなりました。」</p>
+                            <p class="voice-author">40代 男性（企業担当者様）</p>
+                        </div>
+                    </div>
+                    <div class="voice-card">
+                        <div class="voice-icon">👩‍🏫</div>
+                        <div class="voice-content">
+                            <p class="voice-text">「子供たちがウンチの話に興味津々で、楽しみながら学べました。また来年もお願いしたいです！」</p>
+                            <p class="voice-author">30代 女性（小学校教諭）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- FAQ Section -->
         <section id="faq" class="section faq">
             <div class="container">
@@ -374,6 +443,24 @@
                             <p>基本的には動きやすい服装であれば大丈夫です。必要な機材（プロジェクターなど）がない場合は、こちらで持参することも可能ですのでご相談ください。</p>
                         </div>
                     </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="q-mark">Q</span>
+                            <h4>土日や祝日でも開催できますか？</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>はい、担当者のスケジュールによりますが、土日祝日の開催も可能です。お気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="q-mark">Q</span>
+                            <h4>オンラインでの開催は可能ですか？</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>はい、Zoomなどを使用したオンライン開催も対応しております。遠方の拠点と繋いでの実施なども可能です。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -393,24 +480,16 @@
                             <input type="text" id="name" name="name" placeholder="例：山田 太郎（〇〇公民館）" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">メールアドレス<span class="required">必須</span></label>
-                            <input type="email" id="email" name="email" placeholder="例：yamada@example.com" required>
+                            <label for="contact-info">ご連絡先（電話番号またはメール）<span class="required">必須</span></label>
+                            <input type="text" id="contact-info" name="contact-info" placeholder="例：090-1234-5678"
+                                required>
                         </div>
                         <div class="form-group">
-                            <label for="type">お問い合わせ種別<span class="required">必須</span></label>
-                            <select id="type" name="type" required>
-                                <option value="">選択してください</option>
-                                <option value="application">開催申し込み</option>
-                                <option value="question">ご質問・ご相談</option>
-                                <option value="other">その他</option>
-                            </select>
+                            <label for="message">ご用件・ご相談内容</label>
+                            <textarea id="message" name="message" rows="3"
+                                placeholder="「開催を希望したい」「話を聞いてみたい」など、簡単で構いません。"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">お問い合わせ内容<span class="required">必須</span></label>
-                            <textarea id="message" name="message" rows="5" placeholder="開催希望時期や場所、ご質問内容などをご記入ください"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-submit">送信する</button>
+                        <button type="submit" class="btn btn-submit pulse-btn">送信する</button>
                     </form>
                 </div>
             </div>
@@ -422,6 +501,10 @@
             <p class="copyright">&copy; 2025 Regional Health Workshop. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <a href="#contact" class="sticky-cta">
+        開催を申し込む
+    </a>
 
     <script src="script.js"></script>
 </body>
